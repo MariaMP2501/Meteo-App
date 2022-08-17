@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppMétéo</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="scripts/main.js"></script>
+</head>
+
+<body onload="Chercher();">
+    <div class="container">
+        <div class="container-top">
+            <div class="container-top__top">
+                <h1>Application météo</h1><br>
+                <input class="queryLoc" type="text" value="Paris">
+                        <button onclick="Chercher();">Rechercher</button>
+            </div>
+            <div class="container-top__bottom">
+                
+                    <div class="top-bottom__left">
+                        <img src="" class="ico">
+                    </div>
+                    <div class="top-bottom__right">
+                        
+                        
+                        <h1 class="descrip"></h1>
+                        <h1 class="temp"></h1>
+                        <h1 class="loc"></h1>
+                    </div>
+
+            </div>
+        </div>
+        <div class="container-bottom">
+            <!--   ------------------ GRID-top ------------------  Ici c'est le container grid du haut  -->
+            <div class="container-bottom__dt">
+                <h3>10h</h3>
+                <h3 class="morn"></h3>
+
+            </div>
+            <div class="container-bottom__dt">
+                <h3>13h</h3>
+                <h3 class="morn2"></h3>
+
+            </div>
+            <div class="container-bottom__dt">
+                <h3>16h</h3>
+                <h3 class="day"></h3>
+
+            </div>
+            <div class="container-bottom__dt">
+                <h3>19h</h3>
+                <h3 class="night"></h3>
+
+            </div>
+            <div class="container-bottom__dt">
+                <h3>22h</h3>
+                <h3 class="night2"></h3>
+
+            </div>
+            <div class="container-bottom__dt">
+                <h3>1h</h3>
+                <h3 class=""></h3>
+
+            </div>
+            <div class="container-bottom__dt">
+                <h3>4h</h3>
+                <h3 class="day2"></h3>
+
+            </div>
+            <!--  ------------------ GRID-bottom ------------------  Ici c'est le container grid du bas  Ici c'est le container grid du haut  -->
+
+            <div class="container-bottom__dt">
+                <h3>Lun</h3>
+                <h3 class="Lundi"></h3>
+
+            </div>
+            <div class="container-bottom__dt">
+                <h3>Mar</h3>
+                <h3 class="Mardi"></h3>
+
+            </div>
+            <div class="container-bottom__dt">
+                <h3>Mer</h3>
+                <h3 class="Mercredi"></h3>
+
+            </div>
+            <div class="container-bottom__dt">
+                <h3>Jeu</h3>
+                <h3 class="Jeudi"></h3>
+
+            </div>
+            <div class="container-bottom__dt">
+                <h3>Ven</h3>
+                <h3 class="Vendredi"></h3>
+
+            </div>
+            <div class="container-bottom__dt">
+                <h3>Sam</h3>
+                <h3 class="Samedi"></h3>
+
+            </div>
+            <div class="container-bottom__dt">
+                <h3>Dim</h3>
+                <h3 class="Dimanche"></h3>
+
+            </div>
+        </div>
+
+
+        <script  src="scripts/main.js"></script>
+</body>
+
+</html>
+
+<!-- https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}
+
+d3895a3b19a9c9c2d5532054b387044c -->
